@@ -1,0 +1,9 @@
+Comment déterminer que la story est fini ?
+- Tests d'acceptation
+- Tests développeurs TDD
+- CleanCode : *checkstyle, *binôme
+- Gestion de configuration : github etc
+
+Travail à faire (conception émergente) :
+- Créer une classe TestRoute : position de la route sur le champs, largeur, longueur route.
+- Savoir calculer les 4 extrémités de la route
