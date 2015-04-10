@@ -1,10 +1,12 @@
 package AppliSimu;
 
 
-import static org.junit.Assert.*;
-
+import DomaineRoute.Route;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class TestTriangle {
 
@@ -21,5 +23,18 @@ public class TestTriangle {
 		
 		assertEquals(55, xPixels);
 	}
+
+    @Test
+    public void testAddRoad() {
+        //given
+        IHMVoiture monTriangle = new IHMVoiture();
+        Route route = new Route(30,20,50,60);
+
+        //when
+        monTriangle.addRoute(route);
+
+        //assert
+        Assert.assertTrue(monTriangle.getReseau().contains(route));
+    }
 
 }

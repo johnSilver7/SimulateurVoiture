@@ -1,12 +1,13 @@
 package DomaineRoute;
 
-import static org.junit.Assert.*;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by julian on 27/03/15.
  */
-public class TestCreationRoute {
+public class TestRoute {
 
     private Route maRoute;
 
